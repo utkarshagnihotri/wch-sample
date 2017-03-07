@@ -1,0 +1,36 @@
+<span ng-if="$ctrl.status === 'loading'" class="spinner"></span>
+<span ng-if="$ctrl.status === 'failed'" class="alert" role="alert">Could not load Travel articles</span>
+
+<section id="aa-slider" in-view="init()">
+	<div class="aa-slider-area">
+		<div id="sequence" class="seq">
+			<ul class="seq-canvas">
+				<li ng-repeat="slide in slides">
+					<div class="seq-model">
+						<img src="{{slide.imgSrc}}" />
+					</div>
+					<div class="seq-title">
+						<span>{{slide.summary}}</span>
+						<h2 data-seq>{{slide.title}}</h2>
+						<p data-seq>{{slide.body}}</p>
+						<a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP
+							NOW</a>
+					</div>
+				</li>
+			</ul>
+
+			<!--
+        <fieldset class="seq-nav" aria-controls="sequence" aria-label="Slider buttons">
+          <a type="button" class="seq-prev" aria-label="Previous"><span class="fa fa-angle-left"></span></a>
+          <a type="button" class="seq-next" aria-label="Next"><span class="fa fa-angle-right"></span></a>
+        </fieldset>
+-->
+ 			
+		</div>
+		<div class="wpf-loader-two">
+					<div class="wpf-loader-two-inner">
+						<span>Loading</span>
+					</div>
+		</div>	
+	</div>
+</section>

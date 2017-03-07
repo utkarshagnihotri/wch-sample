@@ -1,0 +1,50 @@
+<section id="aa-promo">
+	<div class="container" in-view="init()">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="aa-promo-area">
+					<div class="row">
+						<!-- promo left -->
+						<div class="col-md-5 no-padding">
+
+							<div class="aa-promo-left"
+								ng-repeat="promo in promotionsLeft">
+								<div class="aa-promo-banner">
+									<img src="{{promo.imgSrc}}" alt="img">
+									<div class="aa-prom-content">
+										<span>{{promo.description}}</span>
+										<h4>
+											<a href="#">{{promo.title}}</a>
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- promo right -->
+						<div class="col-md-7 no-padding">
+							<div class="aa-promo-right">
+								<div class="aa-single-promo-right"
+									ng-repeat="promo in promotionsRight">
+									<div class="aa-promo-banner">
+										<img src="{{promo.imgSrc}}" alt="img">
+										<div class="aa-prom-content">
+											<span>{{promo.description}}</span>
+											<h4>
+												<a href="#">{{promo.title}}</a>
+											</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="wpf-loader-two">
+                <div class="wpf-loader-two-inner">
+       				 <span>Loading</span>
+      			</div>
+               </div>
+			</div>
+		</div>
+	</div>
+</section>

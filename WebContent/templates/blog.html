@@ -1,0 +1,41 @@
+  <!-- Latest Blog -->
+  <section id="aa-latest-blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-latest-blog-area">
+            <h2>LATEST BLOG</h2>
+            <div class="row" in-view="init()">
+            
+              <!-- single latest blog -->
+              <div class="col-md-4 col-sm-4" ng-repeat="blog in blogs">
+                <div class="aa-latest-blog-single">
+                  <figure class="aa-blog-img">                    
+                    <a href="#"><img src="{{blog.thumbnail}}" alt="img"></a>  
+                      <figcaption class="aa-blog-img-caption">
+                      <span href="#"><i class="fa fa-eye"></i>{{blog.likes}}</span>
+                      <a href="#"><i class="fa fa-thumbs-o-up"></i>{{blog.thumbsup}}</a>
+                      <a href="#"><i class="fa fa-comment-o"></i>{{blog.comments}}</a>
+                      <span href="#"><i class="fa fa-clock-o"></i>{{blog.publishedDate}}</span>
+                    </figcaption>                          
+                  </figure>
+                  <div class="aa-blog-info">
+                    <h3 class="aa-blog-title"><a href="#">{{blog.title}}</a></h3>
+                    <p>{{blog.summary}}</p> 
+                    <a href="#" class="aa-read-mor-btn">Read more <span class="fa fa-long-arrow-right"></span></a>
+                  </div>
+                </div>
+               
+              </div>
+             <div class="wpf-loader-two">
+					<div class="wpf-loader-two-inner">
+						<span>Loading</span>
+					</div>
+			</div>
+            </div>
+          </div>
+        </div>    
+      </div>
+    </div>
+  </section>
+  <!-- / Latest Blog -->

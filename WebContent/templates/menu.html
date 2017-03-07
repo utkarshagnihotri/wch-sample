@@ -1,0 +1,16 @@
+<span ng-if="status === 'loading'" class="pulse nav-item">
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</span>
+<span ng-if="status === 'failed'" class="nav-item">
+	<div class="alert" role="alert">loading...</div>
+</span>
+<ul  class="nav navbar-nav" in-view="init();">
+	<li ng-repeat="tab in tabs track by tab.id" class="nav-item">
+		<a class="nav-link" ui-sref="cards({ category: tab.name })" ng-class="{ active: tab.active }" class="nav-link" href="#">{{tab.name}}</a>
+	</li>
+</ul>
